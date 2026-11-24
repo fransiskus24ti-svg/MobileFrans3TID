@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.frans3tid_model.Home.HomeFragment
 import com.example.frans3tid_model.Home.MessageFragment
 import com.example.frans3tid_model.Home.MoreFragment
+import com.example.frans3tid_model.Note.NoteFragment
 import com.example.frans3tid_model.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -37,6 +38,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+                R.id.Note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
                 else ->false
